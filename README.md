@@ -53,7 +53,7 @@ Since this is a developer tool, you can install it directly from the source code
 
 ---
 
-## :octagonal_sign: Important Disclaimer
+## Important Disclaimer
 
 **Please Note:** All profile modifications, badges, follower counts, Robux displays, and similar features are **visual, client-side effects only**. 
 
