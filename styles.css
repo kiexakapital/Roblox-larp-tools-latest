@@ -1,0 +1,41 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+body { width: 660px; height: 480px; background: #0b0a12; color: #fff; overflow: hidden; }
+.app-container { display: flex; height: 100%; }
+.sidebar { width: 180px; background: #12101e; border-right: 1px solid #1f1b33; display: flex; flex-direction: column; }
+.brand { display: flex; align-items: center; gap: 8px; padding: 20px 15px; }
+.logo { background: #6366f1; color: white; font-weight: bold; padding: 4px 10px; border-radius: 6px; }
+.brand h2 { font-size: 14px; letter-spacing: 0.5px; }
+.nav-menu { flex: 1; display: flex; flex-direction: column; gap: 4px; padding: 0 10px; }
+.nav-item { color: #8b88a1; text-decoration: none; padding: 10px 12px; font-size: 12px; border-radius: 6px; transition: 0.2s; display: flex; align-items: center; gap: 8px; }
+.nav-item i { font-style: normal; font-size: 14px; }
+.nav-item:hover { background: #1e1b38; color: #fff; }
+.nav-item.active { background: #2a264a; color: #fff; border-left: 3px solid #6366f1; }
+.sidebar-footer { padding: 15px; border-top: 1px solid #1f1b33; }
+.main-content { flex: 1; padding: 20px; overflow-y: auto; position: relative; }
+.page { display: none; flex-direction: column; gap: 15px; animation: fadeIn 0.3s ease-in-out; }
+.page.active { display: flex; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+.card { background: #141224; border: 1px solid #23203c; border-radius: 10px; padding: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.card h3 { font-size: 12px; color: #7d7a99; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; }
+.tool-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid #1f1b33; font-size: 13px; }
+.tool-row:last-child { border-bottom: none; }
+.input-number { width: 90px; background: #0d0c18; border: 1px solid #2e2a4f; color: #fff; border-radius: 6px; padding: 6px 8px; font-size: 12px; outline: none; }
+.input-number:focus { border-color: #6366f1; }
+.toggle-checkbox { appearance: none; width: 36px; height: 20px; background: #2a2744; border-radius: 10px; position: relative; cursor: pointer; outline: none; transition: 0.3s; }
+.toggle-checkbox:checked { background: #3b82f6; }
+.toggle-checkbox::before { content: ''; position: absolute; width: 14px; height: 14px; border-radius: 50%; background: white; top: 3px; left: 3px; transition: 0.3s; }
+.toggle-checkbox:checked::before { left: 19px; }
+.btn-primary { width: 100%; background: linear-gradient(135deg, #6366f1, #4f46e5); color: white; border: none; padding: 10px; border-radius: 6px; font-weight: bold; cursor: pointer; transition: 0.2s; }
+.btn-primary:hover { opacity: 0.9; transform: scale(0.98); }
+.btn-danger { background: #ef4444; color: white; border: none; padding: 8px; border-radius: 6px; cursor: pointer; }
+.info-box { background: rgba(99, 102, 241, 0.1); border-left: 3px solid #6366f1; padding: 10px; font-size: 11px; color: #a5b4fc; border-radius: 4px; line-height: 1.4; }
+.profile-header { display: flex; align-items: center; gap: 12px; }
+.avatar-placeholder { width: 44px; height: 44px; background: #282444; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; }
+.username { font-weight: bold; font-size: 15px; }
+.badge-verified { color: #3b82f6; margin-left: 4px; }
+.badges { display: flex; gap: 6px; margin-top: 4px; }
+.badge { font-size: 10px; padding: 2px 6px; border-radius: 4px; font-weight: bold; }
+.badge.roblox { background: #dc2626; color: white; }
+.badge.premium { background: #eab308; color: black; }
+.profile-stats { display: flex; justify-content: space-between; margin-top: 15px; font-size: 12px; color: #aaa; background: #0d0c18; padding: 10px; border-radius: 6px; }
+.robux-text { color: #22c55e; }

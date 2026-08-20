@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="logo">R</span>
+        <h2>LARP TOOLS</h2>
+      </div>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#" class="nav-item active" data-page="page-dashboard"><i>📊</i> Dashboard</a>
+        <a href="#" class="nav-item" data-page="page-profile"><i>👤</i> Profile Tools</a>
+        <a href="#" class="nav-item" data-page="page-fun"><i>🎭</i> Fun Tools</a>
+        <a href="#" class="nav-item" data-page="page-settings"><i>⚙️</i> Settings</a>
+      </nav>
+      <div class="sidebar-footer">
+        <button id="applyBtn" class="btn-primary">🚀 Apply to Roblox</button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <div id="page-dashboard" class="page active">
+        <section class="card profile-card">
+          <h3>Profile Preview</h3>
+          <div class="profile-header">
+            <div class="avatar-placeholder">👤</div>
+            <div class="profile-info">
+              <span class="username">LarpUser <span class="badge-verified">✓</span></span>
+              <div class="badges">
+                <span class="badge roblox">R</span>
+                <span class="badge premium">OBC</span>
+              </div>
+            </div>
+          </div>
+          <div class="profile-stats">
+            <span><b id="prev-friends">999</b> Friends</span>
+            <span><b id="prev-followers">125K</b> Followers</span>
+            <span class="robux-text"><b id="prev-robux">R$ 9,999</b></span>
+          </div>
+        </section>
+        <div class="info-box">
+          <p>Navigasyon panelini kullanarak profiline sahte değerler tanımla. Ayarlar roblox sayfasında anında güncellenir.</p>
+        </div>
+      </div>
+
+      <div id="page-profile" class="page">
+        <section class="card tools-card">
+          <h3>Profile Customizations</h3>
+          <div class="tool-row">
+            <label><i>💲</i> Fake Robux Amount</label>
+            <input type="number" id="fakeRobux" value="9999" class="input-number">
+          </div>
+          <div class="tool-row">
+            <label><i>👥</i> Fake Followers</label>
+            <input type="number" id="fakeFollowers" value="125000" class="input-number">
+          </div>
+          <div class="tool-row">
+            <label><i>✓</i> Fake Verified Badge</label>
+            <input type="checkbox" id="fakeVerified" class="toggle-checkbox" checked>
+          </div>
+          <div class="tool-row">
+            <label><i>⭐</i> Premium Status (💎)</label>
+            <input type="checkbox" id="premiumBadge" class="toggle-checkbox" checked>
+          </div>
+        </section>
+      </div>
+
+      <div id="page-fun" class="page">
+        <section class="card tools-card">
+          <h3>Troll & Fun</h3>
+          <div class="tool-row">
+            <label><i>🚫</i> Fake Ban Screen Overlay</label>
+            <input type="checkbox" id="fakeBan" class="toggle-checkbox">
+          </div>
+          <div class="info-box" style="margin-top:10px;">
+            <p>Sadece sizin tarafınızdan görülebilir, kayıt alırken veya ekran paylaşırken işe yarar.</p>
+          </div>
+        </section>
+      </div>
+
+      <div id="page-settings" class="page">
+        <section class="card tools-card">
+          <h3>Extension Settings</h3>
+          <div class="tool-row">
+            <label>Auto-Apply on Load</label>
+            <input type="checkbox" id="autoApply" class="toggle-checkbox" checked>
+          </div>
+          <button id="resetBtn" class="btn-danger" style="width:100%;margin-top:10px;">Reset All Data</button>
+        </section>
+      </div>
+
+    </main>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
