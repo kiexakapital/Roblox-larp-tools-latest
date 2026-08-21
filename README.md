@@ -1,4 +1,4 @@
-# :rocket: Roblox LARP Tools
+# :rocket: # Roblox LARP Tools
 
 > A powerful, lightweight Chrome extension packed with utility tools, profile customization features, and web enhancements for Roblox.
 
